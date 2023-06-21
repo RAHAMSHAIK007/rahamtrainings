@@ -120,4 +120,30 @@ services:
       replicas: 5
 
 history:
+  1  yum install docker -y
+    2  systemctl start docker
+    3  systemctl status docker
+    4  hostname -i
+    5  docker swarm init --advertise addr 172.31.81.233
+    6  docker swarm init --advertise-addr 172.31.81.233
+    7  docker node ls
+    8  vim jenkins.sh
+    9  sh jenkins.sh
+   10  cd /var/lib/jenkins/workspace/pipeline1/
+   11  ll
+   12  chmod 777 /var/run/docker.sock
+   13  systemctl reload daemon
+   14  systemctl daemon reload
+   15  systemctl daemon-reload
+   16  systemctl restart docker
+   17  systemctl status docker
+   18  docker images
+   19  docker login
+   20  docker images
+   21  docker tag aws:v1 rahamshaik/traningsaws
+   22  docker images
+   23  vim docker-compose.yml
+   24  cat docker-compose.yml
+   25  docker stack ls
+   26  history
 
